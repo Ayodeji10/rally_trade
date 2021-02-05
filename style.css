@@ -1,0 +1,300 @@
+.container-fluid {
+    padding: 0px;
+    margin: 0px;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, a, input {
+    font-family: 'Poppins', sans-serif;
+    color: black !important;
+}
+
+a{
+    text-decoration: none !important;
+}
+
+/* navbar */
+ul li {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight:bolder;
+    font-size: 11px;
+}
+
+li a:hover {
+    color: #f57f16 !important
+}
+
+.br {
+    border-right: solid 1px black;
+}
+
+.navbar-toggler {
+    background: black;
+    border: none;
+    padding: 10px 6px;
+    outline: none;
+}
+
+.navbar-toggler span {
+    display: block;
+    width: 22px;
+    height: 2px;
+    border: 1px;
+    background: white;
+}
+
+.navbar-toggler span + span {
+    width: 18px;
+    margin: 4px 0 0 4px;
+    width: 22px;
+}
+
+.navbar-toggler span + span + span {
+    width: 10px;
+    margin-left: 4px;
+}
+
+/* banner */
+.banner {
+    position: relative;
+    height: 306px;
+    overflow: hidden;
+    background: url(img/banner.png) no-repeat center;
+    background-size: cover;
+}
+
+/* details */
+#main-content {
+    position: relative;
+}
+
+#wrapper {
+    position: absolute;
+    top: -280px;
+    left: 65px;
+}
+
+#wrapper > p{
+    font-weight: bold;
+    font-size: 15px;
+    text-align: center;
+    margin: 5px 0;
+}
+
+#details {
+    background-color: white;
+    width:325px;
+    border: solid 1px black;
+    border-radius: 30px;
+    margin: 0 auto;
+    padding: 0px 30px;
+}
+
+#details .options {
+    height: 32px;
+    padding-top: 10px;
+    margin-bottom: 5px;
+}
+
+#details p {
+    font-size: 15px;
+}
+
+.options a:hover {
+    color: #f57f16 !important
+}
+
+.options p {
+    text-align: center;
+    font-weight: bold;
+}
+
+#inputs {
+    padding: 8px 0px 5px;
+}
+
+#inputs button {
+    background-color: #00a651;
+    display: block;
+    margin: 0px auto;
+    border-radius: 12px;
+}
+
+.register form > input {
+    font-weight: bold;
+    font-size: 14px;
+    width: 100%;
+    border-width: 0px 0px 1px 0px;
+}
+
+.register form{
+    padding-bottom: 15px;
+}
+
+.terms input {
+    width: auto;
+    display: inline;
+}
+
+.terms p {
+    font-size: 13px;
+    display:inline;
+    padding: 10px;
+}
+
+.terms h6 {
+    font-size: 11px;
+}
+
+.radio p {
+    display: inline-block;
+}
+
+/*  */
+.merit {
+    padding: 35px 0px;
+}
+
+.merit p {
+    font-family: 'Rubik', sans-serif;    
+    font-weight: bolder !important;
+    font-size: 15px;
+    text-align: center;
+}
+
+.merit img {
+    padding-bottom: 5px;
+}
+
+.merit p, .merit img {
+    display: block;
+    margin: 0 auto
+}
+
+/* body */
+.body {
+    margin-top: 25px;
+    background-color: #eeeeee;
+    padding: 35px 70px;
+}
+
+.create-account {
+    margin: 0px auto;
+    padding-left: 90px;
+}
+
+.create-account > p, footer h3 {
+    font-style: italic;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+}
+
+.locations {
+    border-left: solid 1px black;
+    text-align: right;
+    margin: 0px
+}
+
+.locations > p {
+    margin: 0
+}
+
+.locations p {
+    font-size: 12px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.account, .address{
+    padding-bottom: 10px;
+}
+
+.account p, .address p{
+    margin: 0px;
+}
+
+.address p {
+    text-align: right;
+}
+
+/* footer */
+footer{
+    padding: 30px;
+    text-align: center;
+}
+
+footer h3 {
+    color: #ff0000 !important
+}
+
+footer p {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+/* media queries */
+@media (min-width: 990px) and (max-width:1200px){
+    .navbar-brand img {
+        height:37px
+    } 
+
+    .br {
+        border-right: 0px;
+    }
+
+    ul li {
+        letter-spacing: 0px;
+        font-weight:bolder;
+        font-size: 13px;
+    }
+
+    .create-account {
+        padding-left: 0px;
+    }
+}
+
+@media (min-width: 768px) and (max-width:989px){
+    .navbar-brand img {
+        height:32px
+    } 
+
+    .br {
+        border-right: 0px;
+    }
+
+    .merits {
+        padding-top: 220px;
+    }
+
+    .create-account {
+        padding-left: 0px;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar-brand img {
+        height:28px
+    }
+
+    .br {
+        border-right: 0px;
+    }
+
+    #wrapper {
+        left: 15px;
+    }
+
+    .merits {
+        padding-top: 220px;
+    }
+
+    .create-account {
+        padding-left: 0px;
+    }
+
+    .locations {
+        border-left: 0px;
+        padding-top: 40px;
+    }
+}
